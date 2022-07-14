@@ -60,3 +60,18 @@ Orden de elementos a crear:
 4. Subir el proyecto a GitHub desde IntelliJ IDEA desde la opción VSC > Share Project on GitHub
 5. Desde Heroku, crear app y elegir método GitHub y buscar el repositorio
 6. Habilitar deploy automático y ejecutar Deploy (manual la primera vez)
+
+## Spring Security
+1. Agregar dependencias al `pom.xml`:
+```
+<dependency>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-security</artifactId>
+</dependency>
+
+<dependency>
+   <groupId>org.springframework.security</groupId>
+   <artifactId>spring-security-test</artifactId>
+   <scope>test</scope>
+</dependency>
+```
