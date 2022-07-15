@@ -19,7 +19,7 @@ public class HelloController {
                      </head>
                      <body>
                      <h1>INVENTARIO LAPTOPS</h1>
-                     <h2>Ver laptops: /api/laptops</h2>
+                     <h2>Ver laptops: /api/laptops/</h2>
                      <h2>Ver laptop por id: /api/laptops/id</h2>
                      <br>
                        <h3>user: 123456</h3>

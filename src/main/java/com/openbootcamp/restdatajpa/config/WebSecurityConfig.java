@@ -22,7 +22,7 @@ public class WebSecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.authorizeRequests()
                 .antMatchers("/api/home").hasRole("USER")
-                .antMatchers("/api/laptops").hasRole("ADMIN")
+                .antMatchers("/api/laptops/").hasRole("ADMIN")
                 .antMatchers("/api/laptops/{id}").hasRole("ADMIN")
                 .anyRequest().authenticated()
                 .and()
