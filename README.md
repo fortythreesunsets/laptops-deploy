@@ -75,3 +75,11 @@ Orden de elementos a crear:
    <scope>test</scope>
 </dependency>
 ```
+
+## Heroku app
+https://github.com/fortythreesunsets/laptops-deploy
+
+Usuarios:
+user: 123456
+
+admin: password

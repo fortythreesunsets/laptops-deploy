@@ -19,11 +19,9 @@ public class HelloController {
                      </head>
                      <body>
                      <h1>INVENTARIO LAPTOPS</h1>
+                     <br>
                      <h2>Ver laptops: /api/laptops/</h2>
                      <h2>Ver laptop por id: /api/laptops/id</h2>
-                     <br>
-                       <h3>user: 123456</h3>
-                       <h3>admin: password</h3>
                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
                      </body>
                 </html>
