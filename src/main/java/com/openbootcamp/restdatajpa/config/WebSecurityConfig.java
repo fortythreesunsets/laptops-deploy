@@ -45,6 +45,7 @@ public class WebSecurityConfig {
                 .password(passwordEncoder().encode("password"))
                 .roles("USER", "ADMIN")
                 .build();
+
         return new InMemoryUserDetailsManager(user, admin);
     }
 
@@ -59,6 +60,7 @@ public class WebSecurityConfig {
         firewall.setAllowBackSlash(true);
         firewall.setAllowSemicolon(true);
         firewall.setAllowUrlEncodedSlash(true);
+
         return firewall;
     }
 
