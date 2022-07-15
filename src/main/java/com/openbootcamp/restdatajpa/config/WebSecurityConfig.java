@@ -21,8 +21,8 @@ public class WebSecurityConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .antMatchers("/home").permitAll()
-                .antMatchers("/api/laptops/").hasRole("USER")
+                .antMatchers("/home").hasRole("USER")
+                .antMatchers("/api/laptops/").hasRole("ADMIN")
                 .antMatchers("/api/laptops/{id}").hasRole("ADMIN")
                 .anyRequest().authenticated()
                 .and()
