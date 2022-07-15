@@ -22,8 +22,8 @@ public class WebSecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.authorizeRequests()
                 .antMatchers("/home").permitAll()
-                .antMatchers("/api/laptops/").hasRole("ADMIN")
-                .antMatchers("/api/laptops/{id}").hasRole("USER")
+                .antMatchers("/api/laptops/").hasRole("USER")
+                .antMatchers("/api/laptops/{id}").hasRole("ADMIN")
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
