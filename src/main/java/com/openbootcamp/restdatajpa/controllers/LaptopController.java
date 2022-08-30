@@ -43,7 +43,7 @@ public class LaptopController {
      * @return ResponseEntity
      * */
     @GetMapping("/api/laptops/{id}")
-    @ApiOperation("Buscar un libro por Primary Key id de tipo Long")
+    @ApiOperation("Buscar una laptop por Primary Key id de tipo Long")
     public ResponseEntity<Laptop> findOneById(@PathVariable Long id){
        Optional<Laptop> laptopOpt = laptopRepository.findById(id);
 
@@ -60,7 +60,7 @@ public class LaptopController {
      * @return ResponseEntity
      * */
     @PostMapping("/api/laptops")
-    @ApiOperation("Agregar un libro a la BD")
+    @ApiOperation("Agregar una laptop a la BD")
     public ResponseEntity<Laptop> create(@RequestBody Laptop laptop){
         if (laptop.getId() != null){
             log.warn("Trying to create a laptop with an existing Id");
@@ -92,7 +92,7 @@ public class LaptopController {
     }
 
     /**
-     * Borrar un libro existente en la BD
+     * Borrar una laptop existente en la BD
      * http://localhost/api/laptops/1
      * @param id
      * @return ResponseEntity

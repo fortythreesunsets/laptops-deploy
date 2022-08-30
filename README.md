@@ -79,7 +79,8 @@ Orden de elementos a crear:
 ## Heroku app
 https://github.com/fortythreesunsets/laptops-deploy
 
-Usuarios:
+**Usuarios: Password**
+
 user: 123456
 
 admin: password
