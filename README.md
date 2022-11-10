@@ -76,10 +76,9 @@ Orden de elementos a crear:
 </dependency>
 ```
 
-## Heroku app
-https://github.com/fortythreesunsets/laptops-deploy
+## Credenciales
 
-**Usuarios: Password**
+**Usuario: Password**
 
 user: 123456
 
